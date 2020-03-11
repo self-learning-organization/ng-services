@@ -2,7 +2,7 @@ import { Injectable, EventEmitter } from "@angular/core";
 
 import { LoggingService } from "./logging.service";
 
-@Injectable() // Adding this because I'm injecting LoggingService into this Service
+@Injectable({providedIn: 'root'}) // Adding this because I'm injecting LoggingService into this Service
 export class AccountsService {
     accounts = [
         {
