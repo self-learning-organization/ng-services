@@ -12,14 +12,13 @@ import { LoggingService } from './logging.service';
   declarations: [
     AppComponent,
     AccountComponent,
-    NewAccountComponent,
-    LoggingService
+    NewAccountComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
